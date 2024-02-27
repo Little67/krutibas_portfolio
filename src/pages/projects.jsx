@@ -55,8 +55,6 @@ const Projects = () => {
 							learn and grow, and I'm always open to new ideas and
 							feedback.
 						</div> */}
-
-
 						<div className="projects-list">
 							<AllProjects />
 						</div>
