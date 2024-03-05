@@ -29,7 +29,7 @@ const Footer = () => {
 
 				<div className="footer-credits">
 					<div className="footer-credits-text">
-						© {new Date().getFullYear()} Krutibas Dwibedi. All Rights Reserved.
+						© {new Date().getFullYear()} Krutibas Dwibedi. 
 					</div>
 				</div>
 			</div>

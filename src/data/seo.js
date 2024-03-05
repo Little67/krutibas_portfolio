@@ -33,6 +33,12 @@ const SEO = [
 			"If you're interested in collaborating on a project, feel free to reach out to me. I'm always open to new ideas and opportunities.",
 		keywords: ["Tharindu", "Tharindu N", "Tharindu Nayanajith"],
 	},
+	{
+		page: "invitations",
+		description:
+			"We are making an event on the eve of Maha Shivratri festival. We are going distribute panas to everyone. You are welcomed to this event and celebrate with us.",
+		keywords: ["Maha Shivratri", "Shivratri", "IGIT Shivratri", "IGIT Maha Shivratri"],
+	},
 ];
 
 export default SEO;

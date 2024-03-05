@@ -12,7 +12,7 @@
 	justify-content: center;
 	align-items: center;
 	position: fixed;
-	top: 3vh;
+	top: 4vh;
 	z-index: 999;
 }
 
@@ -31,9 +31,12 @@
 	justify-content: space-between;
 	list-style: none;
 	align-items: center;
-	margin-left: -16px;
-	margin-right: 20px;
-	margin-top: 11px;
+	/* margin-left: -16px; */
+	/* margin-right: 20px; */
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
 }
 
 .nav-item {
@@ -59,7 +62,7 @@
 	.navbar {
 		margin-left: 25%;
 		margin-right: 25%;
-		width: 80%;
+		width: 85%;
 		font-size: 80%;
 	}
 
