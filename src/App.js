@@ -13,6 +13,7 @@ import Shivratri from "./pages/shivratri";
 
 import { TRACKING_ID } from "./data/tracking";
 import "./app.css";
+import Donate from "./pages/donate";
 
 function App() {
 	useEffect(() => {
@@ -31,6 +32,7 @@ function App() {
 				{/* <Route path="/article/:slug" element={<ReadArticle />} /> */}
 				<Route path="/contact" element={<Contact />} />
 				<Route path="/invitations/shivratri" element={<Shivratri />} />
+				<Route path="/donate" element={<Donate />} />
 				<Route path="*" element={<Notfound />} />
 			</Routes>
 		</div>
