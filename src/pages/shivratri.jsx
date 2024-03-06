@@ -62,7 +62,9 @@ const Shivratri = () => {
                                 We would also like to give our sincere thanks to students like you who have contributed by providing any amount financial assistance. If you want offer your helping hand you can so by contacting 8763339816, 8327716305, 8144573354 
                                 {/* or by proving some financial assistance by clicking on the below button. <br /> */}
 
-                                {/* <Link to={"/donate"} className='bg-sky-500 p-1 border border-2-gray rounded-lg text-white mt-5' >Donate us</Link> */}
+                                <br />
+                                <br />
+                                <Link to={"/donate"} className='bg-sky-500 p-1 border border-2-gray rounded-lg text-white mt-5' >Donate us</Link>
                                 {/* <span className='hidden md:block' >
                                   
                                 </span> */}

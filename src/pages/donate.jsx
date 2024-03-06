@@ -35,7 +35,7 @@ const Donate = () => {
     function generate() {
         // generate a deep link
         const vpa = input.vpa;
-        const amount = vpa.amount;
+        const amount = input.amount;
 
         console.log("I am outside a link");
         if (vpa && vpa !== "" && vpa.includes("@") &&  amount !== "") {
@@ -51,8 +51,8 @@ const Donate = () => {
             console.log(deeplink);
             setgenerated({
                 show: true,
-                url: `${window.location.protocol}//${window.location.hostname
-                    }/pay/${vpa}${amount && amount > 0 ? "?am=" + amount : ""}`,
+                // url: `${window.location.protocol}//${window.location.hostname
+                url: deeplink,
             });
             //   gtag.event({
             //     action: "create_payment_link",
@@ -89,7 +89,9 @@ const Donate = () => {
                         </div>
                     </div>
                     <div className="projects-container min-h-screen ">
-                        <h1 className='title'>Donate us!</h1>
+                        <h1 className='text-center title' style={{
+                            width: '100%',
+                        }} >Contribute!</h1>
                         {!generated.show ? (
                             <>
                                 {/* Enter Amount section & Proceeds*/}
@@ -123,6 +125,7 @@ const Donate = () => {
                                         </p>
                                     </div>
                                     <div>
+
                                         <button className='p-2 border bg-sky-500' onClick={generate} >Proceed</button>
                                     </div>
                                 </div>
@@ -133,18 +136,30 @@ const Donate = () => {
                             <>
                                 {/* Pay section start */}
                                 <div className="">
-                                    <QRCode value={generated.url} className="qrsvg" size={200} />
-                                    <p className="computerprompt">
+                                    <p className="text-center">
                                         If you are in PC Scan It with any UPI App to Pay
                                     </p>
-                                    <div className="center">
+                                    <div className="flex justify-center items-center" >
+                                     <QRCode value={generated.url} className="qrsvg" size={200} />
+                                    </div>
+                                    
+                                    <div className='m-2 mt-10' >
+                                        <p className="text-center">
+                                            Or <br />
+                                            If you are in phone click <span className='text-sky-500' >proceed to PAY</span>
+                                        </p>
+                                    </div>
+                                    <div className="flex justify-center items-center">
                                         <a
                                             href={generated.url}
-                                            target="_blank"
+                                            // target="_blank"
                                             rel="noopener noreferrer"
-                                            className=""
+                                            className="border bg-sky-600 p-2 rounded text-white"
+                                            onClick={()=>{
+                                                console.log("__",generated.url);
+                                            }}
                                         >
-                                            P A Y
+                                            Proceed to P A Y
                                         </a>
                                     </div>
                                 </div>
