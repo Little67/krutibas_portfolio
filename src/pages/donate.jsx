@@ -38,17 +38,17 @@ const Donate = () => {
         const amount = input.amount;
 
         console.log("I am outside a link");
-        if (vpa && vpa !== "" && vpa.includes("@") &&  amount !== "") {
+        if (vpa && vpa !== "" && vpa.includes("@") && amount !== "") {
             console.log("I am inside a link");
 
-            const deeplink = `upi://pay?pn=withUpier&pa=${vpa}&cu=INR${amount
+            const deeplink = `upi://pay?pa=${vpa}&pn=null&cu=INR${amount
                 ? `&am=${amount.includes(".")
                     ? amount
                     : `${amount}.0`
                 }`
                 : ""
                 }`;
-            console.log(deeplink);
+            // console.log(deeplink);
             setgenerated({
                 show: true,
                 // url: `${window.location.protocol}//${window.location.hostname
@@ -96,13 +96,13 @@ const Donate = () => {
                             <>
                                 {/* Enter Amount section & Proceeds*/}
 
-                                <div className='border border-red-500 min-h-96 p-3' >
+                                <div className='min-h-96 p-3' >
                                     <div className='hidden' >
                                         <p className="">Enter Your VPA (UPI ID)</p>
                                         <input
                                             type="text"
                                             placeholder="UPI ID"
-                                            className=""
+                                            className="outline-none border border-sky-500"
                                             onChange={(e) =>
                                                 setinput({ ...input, vpa: e.target.value })
                                             }
@@ -110,12 +110,12 @@ const Donate = () => {
                                         />
                                     </div>
                                     <div>
-                                        <p className="">
+                                        <p className="text-center">
                                             Amount ={" "}
                                             <input
                                                 type="number"
                                                 placeholder="₹"
-                                                className='border'
+                                                className="outline-none border-2 p-1 border-sky-500"
                                                 onChange={(e) =>
                                                     setinput({ ...input, amount: e.target.value })
                                                 }
@@ -124,10 +124,12 @@ const Donate = () => {
                                             {" ₹"}
                                         </p>
                                     </div>
-                                    <div>
-
-                                        <button className='p-2 border bg-sky-500' onClick={generate} >Proceed</button>
+                                    <div className='flex justify-center items-center mt-5' >
+                                        <button className='p-2 border bg-sky-500 text-white rounded' onClick={generate} >Proceed</button>
                                     </div>
+                                    {invalid.show && (
+                                    <p className="text-red-500 text-center">{invalid.text}</p>
+                                )}
                                 </div>
 
                                 {/* Enter Amount section Proceeds ends */}
@@ -136,14 +138,17 @@ const Donate = () => {
                             <>
                                 {/* Pay section start */}
                                 <div className="">
-                                    <p className="text-center">
-                                        If you are in PC Scan It with any UPI App to Pay
+                                    <p className="text-center text-sky-500 font-extrabold mb-2 ">
+                                        Scan It with any UPI App to Pay
                                     </p>
                                     <div className="flex justify-center items-center" >
-                                     <QRCode value={generated.url} className="qrsvg" size={200} />
+                                        <QRCode value={generated.url} className="qrsvg" size={200} />
                                     </div>
                                     
-                                    <div className='m-2 mt-10' >
+                                    <p className="text-center font-extrabold mt-2 ">
+                                        Thank You! We really appreciate that.
+                                    </p>
+                                    {/* <div className='m-2 mt-10' >
                                         <p className="text-center">
                                             Or <br />
                                             If you are in phone click <span className='text-sky-500' >proceed to PAY</span>
@@ -156,12 +161,12 @@ const Donate = () => {
                                             rel="noopener noreferrer"
                                             className="border bg-sky-600 p-2 rounded text-white"
                                             onClick={()=>{
-                                                console.log("__",generated.url);
+                                                // console.log("__",generated.url);
                                             }}
                                         >
                                             Proceed to P A Y
                                         </a>
-                                    </div>
+                                    </div> */}
                                 </div>
                                 {/* Pay section end */}
                             </>

@@ -56,15 +56,17 @@ const Shivratri = () => {
                         {/* --- ABOUT SECTION --- */}
                         <div className='flex flex-col md:flex-row min-h-72 justify-between' >
                             <p className='leading-relaxed md:w-[49%] mb-5 md:mr-3 md:leading-8 text-lg text-justify' >
-                                <span className='text-sky-500 font-bold' >Happy Maha Shivatri!</span> 
-                                We are happy to invite you to the distribution dahi pana on the eve of holy Maha Shivratri at IGIT temple. This is not an official event rather some of the students are organizing it. We have planned to provide nearly 800 - 1000 glass of dahi panas. We will auspciously wait your presence. 
+                                <span className='text-sky-500 font-bold' >Happy Maha Shivatri! </span> 
+                                 We are happy to invite you to the distribution of dahi pana on the eve of holy Maha Shivratri at IGIT temple. This is not an official event rather some of the students are organizing it. We have planned to provide nearly 800 - 1000 glass of dahi panas. We will auspiciously wait to your presence.  
+                                <br />
+                                <br />
                                 {/* If any one left please do not mind. */}
-                                We would also like to give our sincere thanks to students like you who have contributed by providing any amount financial assistance. If you want offer your helping hand you can so by contacting 8763339816, 8327716305, 8144573354 
+                                We would also like to give our sincere thanks to students like you who have contributed by providing any amount of financial assistance. If you want offer your helping hand you can so by contacting 8763339816, 8327716305, 8144573354.
                                 {/* or by proving some financial assistance by clicking on the below button. <br /> */}
 
                                 <br />
                                 <br />
-                                <Link to={"/donate"} className='bg-sky-500 p-1 border border-2-gray rounded-lg text-white mt-5' >Donate us</Link>
+                                <Link to={"/donate"} className='bg-sky-500 p-1 border border-2-gray rounded-lg text-white mt-5' >Contribute!</Link>
                                 {/* <span className='hidden md:block' >
                                   
                                 </span> */}
@@ -91,13 +93,13 @@ const Shivratri = () => {
                                 }}
                             >
                             </div>
-                            <p className='leading-relaxed md:w-[49%] mb-5 md:mr-3 md:leading-8 text-lg text-justify' >
+                            <div className='leading-relaxed md:w-[49%] mb-5 md:mr-3 md:leading-8 text-lg text-justify' >
                                 <ul>
                                     <li>Date : 8th March 2024</li>
                                     <li>Time : 09:00 AM</li>
                                     <li>Place : IGIT college Temple </li>
                                 </ul>
-                            </p>
+                            </div>
                         </div>
                         {/* --- COORDINATES --- */}
                         <div>
@@ -106,8 +108,8 @@ const Shivratri = () => {
                                 fontWeight: "900",
                             }} >Coordinators</h1>
                             <div className='flex flex-wrap' >
-                                {coordinators.map((coordinator) => {
-                                    return (<a href={coordinator.link} target='_blank' rel="noreferrer" className='w-16 h-16 bg-red-400 rounded-full m-1 flex justify-center items-center overflow-hidden cursor-pointer' >
+                                {coordinators.map((coordinator, index) => {
+                                    return (<a key={index} href={coordinator.link} target='_blank' rel="noreferrer" className='w-16 h-16 bg-red-400 rounded-full m-1 flex justify-center items-center overflow-hidden cursor-pointer' >
                                         <img src={coordinator.image} alt="profile"  />
                                     </a>)
                                 })}
