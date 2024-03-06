@@ -92,7 +92,7 @@ const Shivratri = () => {
                             <p className='leading-relaxed md:w-[49%] mb-5 md:mr-3 md:leading-8 text-lg text-justify' >
                                 <ul>
                                     <li>Date : 8th March 2024</li>
-                                    <li>Time : 12:30 PM</li>
+                                    <li>Time : 09:00 AM</li>
                                     <li>Place : IGIT college Temple </li>
                                 </ul>
                             </p>
