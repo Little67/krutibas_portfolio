@@ -66,12 +66,12 @@ const Shivratri = () => {
             title: "",
             link: "",
         },
-        {
-            name: "Abhishek Panda",
-            image: "https://firebasestorage.googleapis.com/v0/b/myproject-b43c8.appspot.com/o/krutibas_website%2FAbhishekh%20Panda.jpg?alt=media&token=e17a2209-803c-4887-9c35-c13ffb85dbe8",
-            title: "",
-            link: "https://www.instagram.com/i_s_h_a_n_17/",
-        },
+        // {
+        //     name: "Abhishek Panda",
+        //     image: "https://firebasestorage.googleapis.com/v0/b/myproject-b43c8.appspot.com/o/krutibas_website%2FAbhishekh%20Panda.jpg?alt=media&token=e17a2209-803c-4887-9c35-c13ffb85dbe8",
+        //     title: "",
+        //     link: "https://www.instagram.com/i_s_h_a_n_17/",
+        // },
     ]
 
     return (
