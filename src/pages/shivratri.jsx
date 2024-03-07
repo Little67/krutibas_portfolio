@@ -29,7 +29,7 @@ const Shivratri = () => {
         },
         {
             name: "Satyanarayan Dalei",
-            image: "https://media.licdn.com/dms/image/C4D03AQHbumNxTiwY9A/profile-displayphoto-shrink_400_400/0/1626777692393?e=1715212800&v=beta&t=FnTk7ATHsKlwOZFOBYjgMDe3uOVDCY5wowZGmHTW8as",
+            image: "https://firebasestorage.googleapis.com/v0/b/myproject-b43c8.appspot.com/o/krutibas_website%2Fsatya.jpg?alt=media&token=938694ed-fdc3-4c7b-9c47-8ccc53c143dc",
             title: "",
             link: "https://www.linkedin.com/in/satyadalei/",
         },
