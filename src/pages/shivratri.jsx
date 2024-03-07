@@ -66,12 +66,66 @@ const Shivratri = () => {
             title: "",
             link: "",
         },
-        // {
-        //     name: "Abhishek Panda",
-        //     image: "https://firebasestorage.googleapis.com/v0/b/myproject-b43c8.appspot.com/o/krutibas_website%2FAbhishekh%20Panda.jpg?alt=media&token=e17a2209-803c-4887-9c35-c13ffb85dbe8",
-        //     title: "",
-        //     link: "https://www.instagram.com/i_s_h_a_n_17/",
-        // },
+        {
+            name: "Abhishek Panda",
+            image: "https://firebasestorage.googleapis.com/v0/b/myproject-b43c8.appspot.com/o/krutibas_website%2Fishan.jpg?alt=media&token=79527c23-eb4c-41a9-8886-93cc755de3cf",
+            title: "",
+            link: "https://www.instagram.com/i_s_h_a_n_17/",
+        },
+        {
+            name: "Swayambhu Mishra",
+            image: "https://firebasestorage.googleapis.com/v0/b/myproject-b43c8.appspot.com/o/krutibas_website%2Fswambhu.jpg?alt=media&token=1c01f9d6-1c7d-44ad-ac82-3043ff6342f2",
+            title: "",
+            link: "hhttps://www.instagram.com/swayambhumishra?utm_source=qr&igsh=MXRjOGw3OTlxcW14YQ==",
+        },
+        {
+            name: "Aman Thakur",
+            image: "https://firebasestorage.googleapis.com/v0/b/myproject-b43c8.appspot.com/o/krutibas_website%2Faman.jpg?alt=media&token=a27f4bc0-a956-451b-8381-eacff7813cb4",
+            title: "",
+            link: "https://www.instagram.com/senpai.xkun?utm_source=qr&igsh=MTNocGZveWZjdHJkcQ==",
+        },
+        {
+            name: "Bharttruhari Swain",
+            image: "https://firebasestorage.googleapis.com/v0/b/myproject-b43c8.appspot.com/o/krutibas_website%2Fbharat.jpg?alt=media&token=b09c170a-11c9-4411-a5fd-b29f9e031c33",
+            title: "",
+            link: "https://www.instagram.com/bharttruhari07/",
+        },
+        {
+            name: "Debi prasad sethy",
+            image: "https://firebasestorage.googleapis.com/v0/b/myproject-b43c8.appspot.com/o/krutibas_website%2FAbhishekh%20Panda.jpg?alt=media&token=9043df43-94c7-40cf-945e-11bcba3ca3a0",
+            title: "",
+            link: "",
+        },
+        {
+            name: "Prayash ranjan kuanr",
+            image: "https://firebasestorage.googleapis.com/v0/b/myproject-b43c8.appspot.com/o/krutibas_website%2Fred.jpg?alt=media&token=561557d5-f6f0-4225-b07b-f674a6bbac03",
+            title: "",
+            link: "",
+        },
+        {
+            name: "Priyanshu Samal",
+            image: "https://firebasestorage.googleapis.com/v0/b/myproject-b43c8.appspot.com/o/krutibas_website%2Fb7659606-d46b-4958-80b8-91dd6396f5c6.jpg?alt=media&token=0f3db864-a318-4ea8-96e1-90f3ea963205",
+            title: "",
+            link: "",
+        },
+        {
+            name: "Subham panda ",
+            image: "https://firebasestorage.googleapis.com/v0/b/myproject-b43c8.appspot.com/o/krutibas_website%2F412710754_725837526139628_4983489978802970846_n.jpg?alt=media&token=cee1900a-2aa1-4733-bc4b-2bf447bd0192",
+            title: "",
+            link: "https://www.instagram.com/_.gilded_moon007._/",
+        },
+        {
+            name: "Sinu reddy",
+            image: "https://firebasestorage.googleapis.com/v0/b/myproject-b43c8.appspot.com/o/krutibas_website%2F426159537_672792804813580_5615134514639294101_n.jpg?alt=media&token=ee6c3dfb-21aa-47e8-998f-662d0d0bdbc9",
+            title: "",
+            link: "https://www.instagram.com/sinu_r_15/",
+        },
+        {
+            name: "Ashish sahu",
+            image: "https://firebasestorage.googleapis.com/v0/b/myproject-b43c8.appspot.com/o/krutibas_website%2Fasish.jpg?alt=media&token=2aa830ae-a19d-49fb-979b-e729cbe864d5",
+            title: "",
+            link: "https://www.instagram.com/_ashish_ax_107?utm_source=qr&igsh=MXNxa2JveWwzM2c1Zw==",
+        },
     ]
 
     return (
