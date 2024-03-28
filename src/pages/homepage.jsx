@@ -100,7 +100,7 @@ const Homepage = () => {
 									<br />
 									<span style={{ color: "#a0b5bd" }} >
 										<Typewriter
-											words={["Electrical Engineer", 'IGIT 2020-24', 'Gate Qualified', 'Radhe shyam!']}
+											words={["Electrical Engineer", 'IGIT 2020-24', 'Gate Qualified', 'All India Rank 653']}
 											loop={0}
 											cursor
 											cursorStyle='_'

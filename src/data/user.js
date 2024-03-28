@@ -23,7 +23,7 @@ const INFO = {
 	about: {
 		title: "I’m Krutibas. Electrical undergrad at IGIT Sarang.",
 		description:
-			"I am from Rourkela, currently pursuing B.Tech in Electrical Engineering (Batch 39(2020-24)). I have qualified GATE in my 3rd year & appeared in my final year also. Currently working in HHO project",
+			"I am from Rourkela, currently pursuing B.Tech in Electrical Engineering (2020-24). I've qualified for the GATE exam in my final year of the EE branch with an All India Rank of 653. This achievement is even sweeter considering I also secured an AIR of 2946 in my 3rd year. Currently working in HHO project",
 	},
 
 	articles: {
